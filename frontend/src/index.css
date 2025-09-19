@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+@layer base{
+    section{
+        @apply py-[75px]
+    }
+}
+
+@layer components{
+    .container{
+        @apply max-w-full w-[1440px] px-5 mx-auto
+    }
+
+    .btn{
+        @apply #0067ff py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px]
+    }
+
+    .heading{
+        @apply text-[44px] leading-[54px] font-[700] text-[#4E545F]
+    }
+
+    .text_para{
+        @apply text-[18px] leading-[30px] font-[400] text-[#4E545F] mt-[18px]
+
+    }
+
+
+    @media only screen and (max-width: 768px){
+        .text_para{
+            @apply text=[16px] leading-7 mt-3
+        }
+
+        .heading{
+            @apply text-[32px] leading-[42px]
+        }
+    }
+}
